@@ -20,7 +20,7 @@ img{
 /* ADDITIONAL STYLES
 /*******************************************/
 h1, h2, h3, div {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
