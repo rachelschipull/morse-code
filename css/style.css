@@ -73,3 +73,7 @@ h1, h2, h3, div {
 .button-25:disabled:hover {
   box-shadow: none;
 }
+
+/*#solution{
+  display: none;
+}

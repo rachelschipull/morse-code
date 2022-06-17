@@ -1,5 +1,5 @@
 //receive string length from user
-document.querySelector('button').addEventListener('click', getMorse)
+document.querySelector('.button-25').addEventListener('click', getMorse)
 
 async function getMorse(){
 
@@ -17,32 +17,32 @@ const dictionary = {
   "7": "--...",
   "8": "---..",
   "9": "----.",
-  "a": ".-",
-  "b": "-...",
-  "c": "-.-.",
-  "d": "-..",
-  "e": ".",
-  "f": "..-.",
-  "g": "--.",
-  "h": "....",
-  "i": "..",
-  "j": ".---",
-  "k": "-.-",
-  "l": ".-..",
-  "m": "--",
-  "n": "-.",
-  "o": "---",
-  "p": ".--.",
-  "q": "--.-",
-  "r": ".-.",
-  "s": "...",
-  "t": "-",
-  "u": "..-",
-  "v": "...-",
-  "w": ".--",
-  "x": "-..-",
-  "y": "-.--",
-  "z": "--..",
+  "A": ".-",
+  "B": "-...",
+  "C": "-.-.",
+  "D": "-..",
+  "E": ".",
+  "F": "..-.",
+  "G": "--.",
+  "H": "....",
+  "I": "..",
+  "J": ".---",
+  "K": "-.-",
+  "L": ".-..",
+  "M": "--",
+  "N": "-.",
+  "O": "---",
+  "P": ".--.",
+  "Q": "--.-",
+  "R": ".-.",
+  "S": "...",
+  "T": "-",
+  "U": "..-",
+  "V": "...-",
+  "W": ".--",
+  "X": "-..-",
+  "Y": "-.--",
+  "Z": "--..",
   ".": ".-.-.-",
   ",": "--..--",
   "?": "..--..",
@@ -74,12 +74,6 @@ const dotSound = new Audio('dot.mp3')
 //dotSound.play()
 //add spaces between elements in the array (when building array or during the playing process)
 for (let i = 0; i < dashAndDots.length; i++){
-  //function delayAudio(){
-   // return new Promise (res=>{
-   //   dashAndDots[i].onended = function spaces() {
-   //     setTimeout(() => res(), 400)}
-   // })
-    //}
   //console.log(dashAndDots[i])
   for (let j = 0; j < dashAndDots[i].length; j++){
     //if (dashAndDots[i][j] === '.'){ dotSound.play()
@@ -108,20 +102,27 @@ for (let i = 0; i < dashAndDots.length; i++){
           }
       await playAudio(dashSound)
       //dashSound.play()}
+      }
+      //if (dashAndDots[i].length === -1){
+        //return new Promise(res => {
+          //(dotSound.onended || dashSound.onended) = function breaks() {
+            //setTimeout(() => res(), 400)} 
+
+        //})
+      //} //await breaks( dotSound || dashSound)
+    }
   }
-}
-}
-//play using audio files and print to DOM simultaneously
-
 //print in the DOM, but not be visible 
+document.querySelector('#solutionId').addEventListener('click', revealMorse)
 
+function revealMorse(){
+  console.log(playArray)
+  document.querySelector('h3').innerText = `${playArray.join(' ')}`
+}
 //once dad has listened to the event, he can reveal the code
 
 //hide the printed morse code
-
-//option to replay the selection - store it locally? or at least store the pattern locally
-
-
+}
 
 
 //   const result = '';
@@ -145,4 +146,3 @@ for (let i = 0; i < dashAndDots.length; i++){
 //       .catch(err => {
 //           console.log(`error ${err}`)
 //       });
-}
