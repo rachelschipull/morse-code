@@ -20,11 +20,19 @@ img{
 /* ADDITIONAL STYLES
 /*******************************************/
 h1, h2, h3, div {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Roboto Mono', monospace;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+p {
+  font-size: large;
+}
+
+.reveal{
+  background-color: lightblue;
 }
 
 /* CSS */
