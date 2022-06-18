@@ -89,9 +89,7 @@ for (let i = 0; i < dashAndDots.length; i++){
             setTimeout(() => res(), 200)}
         })
       }
-      //console.log(playAudio)
       await playAudio(dotSound)
-      //console.log(playAudio)
       //dotSound.play()
       } else if (dashAndDots[i][j] === '-'){ 
         function playAudio(dashSound){
@@ -113,13 +111,6 @@ for (let i = 0; i < dashAndDots.length; i++){
           }
       await playAudio(blankSound)
       }
-      //if (dashAndDots[i].length === -1){
-        //return new Promise(res => {
-          //(dotSound.onended || dashSound.onended) = function breaks() {
-            //setTimeout(() => res(), 400)} 
-
-        //})
-      //} //await breaks( dotSound || dashSound)
     }
   }
 //print in the DOM, but not be visible 
@@ -129,30 +120,4 @@ function revealMorse(){
   console.log(playArray)
   document.querySelector('h3').innerText = `${playArray.join(' ')}`
 }
-//once dad has listened to the event, he can reveal the code
-
-//hide the printed morse code
 }
-
-
-//   const result = '';
-//   const characters = 'abcdefghijklmnopqrstuvwxyz0123456789.,?!()&'
-//   const length = document.querySelector('input').value
-//   const charactersLength = characters.length;
-// //choose random characters from list
-//   for(let i=0; i<length; i++){
-//     result += characters.charAt(Math.floor(Math.random()*charactersLength));
-//   }
-//   //return result
-// //console.log(makeid(5))
-
-//   const url = `http://api.funtranslations.com/translate/morse/audio.json?text=${result}`
-
-//   fetch(url)
-//       .then(res => res.json()) // parse response as JSON
-//       .then(data => {
-//         console.log(data.contents.translated.audio)
-//       })
-//       .catch(err => {
-//           console.log(`error ${err}`)
-//       });
