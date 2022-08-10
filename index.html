@@ -20,14 +20,18 @@
 		<div>
 			<p>Choose the number of characters you want to play and test yourself by clicking the button below.</p>
 			<p>But listen carefully, <em>it will only play once!</em></p>
+			<!-- Takes in number of Morse characters to be randomly produced by the JS -->
 			<input type="number" value="" width="10px" min="1" max="15">
+			<!-- button-25 is connected to event listener to run the getMorse() function -->
 			<button type="button" name="button" class="button-25">Test your Morse</button>
 		</div>
 
 		<div class="reveal">
 			<h2>Solution</h2>
 			<p>Did you decode the Morse code correctly? Push the button to reveal the solution.</p>
+			<!-- Location for the playArray to be appear in the DOM on click -->
 			<h3 id="solution"></h3>
+			<!-- On click, the event listener makes the solution visible to the user in the h3 above -->
 		<button type="button" name="button" id="solutionId" class="button-25">Reveal Solution</button>
 		</div>
 		<script type="text/javascript" src="js/main.js"></script>
