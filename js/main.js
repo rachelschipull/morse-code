@@ -71,10 +71,13 @@ const dashAndDots = playArray.map( sign => dictionary[sign] )
 
 //constants to add sounds to the Audio API
 const dashSound = new Audio('dash.mp3')
+dashSound.autoplay = true;
 //dashSound.play()
 const dotSound = new Audio('dot.mp3')
+dotSound.autoplay = true;
 //dotSound.play()
 const blankSound = new Audio('blank.mp3')
+blankSound.autoplay = true;
 //adds spaces between elements in the array (when building array or during the playing process)
 
 //nested loop to play over the dashes and dots and add space between them to make them audible
