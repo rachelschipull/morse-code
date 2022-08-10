@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta name="description" content="A simple app to test yourself on Morse code and decoding">
+	<meta name="keywords" content="decode morse code ham radio telegraph">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet"> "
+
+		<title>Test Your Morse Code</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<h1>Test your Morse code decoding!</h1>
+		<div>
+			<p>Choose the number of characters you want to play and test yourself by clicking the button below.</p>
+			<p>But listen carefully, <em>it will only play once!</em></p>
+			<input type="number" value="" width="10px" min="1" max="15">
+			<button type="button" name="button" class="button-25">Test your Morse</button>
+		</div>
+
+		<div class="reveal">
+			<h2>Solution</h2>
+			<p>Did you decode the Morse code correctly? Push the button to reveal the solution.</p>
+			<h3 id="solution"></h3>
+		<button type="button" name="button" id="solutionId" class="button-25">Reveal Solution</button>
+		</div>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
